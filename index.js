@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { SafeAreaView, StyleSheet, Dimensions, Platform } from 'react-native';
+import { View, StyleSheet, Dimensions, Platform } from 'react-native';
 import Modal from 'react-native-modal';
 import Hcaptcha from './Hcaptcha';
 import PropTypes from 'prop-types';
@@ -50,7 +50,7 @@ class ConfirmHcaptcha extends PureComponent {
         isVisible={show}
         hasBackdrop={!passiveSiteKey}
       >
-        <SafeAreaView style={[styles.wrapper, { backgroundColor }]}>
+        <View style={[styles.wrapper, { backgroundColor }]}>
           <Hcaptcha
             url={baseUrl}
             siteKey={siteKey}
@@ -63,7 +63,7 @@ class ConfirmHcaptcha extends PureComponent {
             theme={theme}
             rqdata={rqdata}
           />
-        </SafeAreaView>
+        </View>
       </Modal>
     );
   }
