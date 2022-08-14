@@ -3,6 +3,7 @@
   "version": "1.4.0",
   "description": "hCaptcha Library for React Native (both Android and iOS)",
   "main": "index.js",
+  "types": "index.d.ts",
   "scripts": {
     "test": "jest"
   },
